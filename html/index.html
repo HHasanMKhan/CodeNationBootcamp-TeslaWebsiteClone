@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla</title>
+</head>
+<style>
+    
+    @font-face {
+        font-family: 'gotham-book';
+        src: url("../css/Gotham-Font/GothamBook.ttf") format("truetype");
+    }
+    
+    @font-face {
+        font-family: 'gothamlight-medium';
+        src: url("../css/Gotham-Font/GothamMedium.ttf") format("truetype");
+    }
+    
+    * {
+        color: #393C41;
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+    
+    #report {
+        background-color: white;
+        text-align: center;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        font-family: 'gotham-book';
+        font-size: 14.5px;
+        padding: 16px;
+        width: 100%;
+    }
+    
+    #nav {
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+        height: 56px;
+    }
+    
+    #nav ul a {
+        padding: 7px 16px;
+        transition: 0.5s;
+    }
+    
+    #logo {
+        width: 424px;
+        padding-left: 30px;
+        
+    }
+    
+    #nav-center {
+        width: 590px;
+    }
+    
+    #nav-right {
+        width: 424px;
+        padding-left: 75px;
+    }
+    
+    a {
+        font-family: 'gothamlight-medium';
+        text-decoration: none;
+    }
+    
+    #jumbotron {
+        z-index: -1;
+        position: relative;
+    }
+    
+    .model {
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .border {
+        border: solid black;
+    }
+
+    #nav-center ul a:hover , #nav-right ul a:hover {
+        transition: 0.5s;
+        background-color: rgba(255, 251, 251, 0.4);
+        border-radius: 12px;
+        
+    }
+
+    
+    
+</style>
+<body>
+    <div style="position: fixed; width: 100%;">
+        <div id="report">
+            <p><a href="https://www.tesla.com/en_gb/impact" style="font-family: gotham-book">Read Tesla's 2021 Impact Report</a></p>
+        </div>
+        <div id="nav">
+            <div id="logo">
+                <a href="https://www.tesla.com/en_gb"><img src="../img/logo.png" alt="tesla_logo" width="124"></a>
+            </div>
+            <div id="nav-center">
+                <ul>
+                    <a href="https://www.tesla.com/en_gb/models">Model S</a>
+                    <a href="https://www.tesla.com/en_gb/model3">Model 3</a>
+                    <a href="https://www.tesla.com/en_gb/modelx">Model X</a>
+                    <a href="https://www.tesla.com/en_gb/modelx">Model Y</a>
+                    <a href="https://www.tesla.com/en_gb/powerwall">Powerwall</a>
+                    <a href="https://www.tesla.com/en_gb/charging">Charging</a>
+                </ul>
+            </div>
+            <div id="nav-right">
+                <ul>
+                    <a href="https://www.tesla.com/en_gb/support">Support</a>
+                    <a href="https://shop.tesla.com/en_gb?tesref=true">Shop</a>
+                    <a href="https://auth.tesla.com/oauth2/v1/authorize?redirect_uri=https%3A%2F%2Fwww.tesla.com%2Fteslaaccount%2Fowner-xp%2Fauth%2Fcallback&response_type=code&client_id=ownership&scope=offline_access%20openid%20ou_code%20email&audience=https%3A%2F%2Fownership.tesla.com%2F&locale=en-GB">Account</a>
+                    <a>Menu</a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="jumbotron">
+        <img src="../img/tesla-1.jpg" alt="model_y" width="100%" height="100%">
+        <div class="model">
+            <h1>Model Y</h1>
+            <p>2% Company Car Tax. <span>Learn More</span></p>
+        </div>
+    </div>
+</body>
+</html>
